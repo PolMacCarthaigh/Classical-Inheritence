@@ -1,15 +1,18 @@
-require_relative 'animal'
-require_relative 'mammal'
-require_relative 'amphibian'
-require_relative 'primate'
-require_relative 'bird'
-require_relative 'chimpanzee'
-require_relative 'frog'
-require_relative 'bat'
-require_relative 'parrot'
+require_relative 'classes'
 
-parrot = Parrot.new
-bat = Bat.new
 
-parrot.fly
-bat.fly
+riblet = Frog.new("riblet", 2, "warm", false)
+puts "#{riblet.name} is a Frog; therefore, #{riblet.fly}"
+puts
+
+wayne = Bat.new("wayne", 2, "warm", true)
+puts "#{wayne.name} is a Bat; therefore, #{wayne.fly}"
+puts
+
+scott = Parrot.new("scott", 2, "warm", true)
+puts "#{scott.name} is a Parrot; therefore, #{scott.fly}"
+puts
+
+rodney = Chimpanzee.new("rodney", 2, "cold", false)
+puts "#{rodney.name} is a Chimpanzee; therefore, #{rodney.fly}"
+puts
